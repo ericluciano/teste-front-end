@@ -1,0 +1,70 @@
+/*
+* Helpers
+*
+* 1. Font Weight
+* 2. Font Size
+* 3. Color
+* 4. Text
+* 5. Background
+* 6. Line Letter
+* 7. Convert Px to Rem
+*/
+
+// 1. Font Weight
+// --------------------------------------------------
+fw(name)
+  for n in name
+    {'.fw-'}{n}
+      font-weight n
+
+
+// 2. Font Size
+// --------------------------------------------------
+fs(name)
+  for n in name
+    {'.fs-'}{n}
+      pxtorem( font-size, n)
+
+// 3. Colors
+// --------------------------------------------------
+set-color(c)
+  for n in c
+    {'.color-'}{n}
+      color: ($+n)
+
+//4. Text
+// --------------------------------------------------
+
+set-text(name)
+  for n in name
+    if n == 'upper'
+      {'.text-'}{n}
+        text-transform uppercase
+    else if n == 'lower'
+      {'.text-'}{n}
+        text-transform lowercase
+    else
+      {'.text-'}{n}
+        text-align unquote(n)
+
+// 5. Background
+// --------------------------------------------------
+bg(name)
+  for n in name
+    {'.bg-'}{n}
+      background-color ($ + n)
+
+// 6. Background
+// --------------------------------------------------
+line-letter(name, num1, num2)
+  {'.line-letter-'}{name}
+    line-height num1
+    letter-spacing unit(num2, 'px')
+// 7. Convert Px to Rem
+// --------------------------------------------------
+pxtorem(prop, value)
+	{prop}: unit(value, px)
+	{prop}: unit((value / $base-font-size), rem)
+
+convertpxtorem(value)
+	return unit((value / $base-font-size), rem)

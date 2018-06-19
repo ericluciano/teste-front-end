@@ -1,0 +1,37 @@
+.slide
+  text-align left
+  box-sizing border-box
+  padding-right 5%
+.slider
+  width 100%
+  text-align left
+
+.slick-slide
+  background $c1
+  color $black
+  padding-bottom 30px
+.slick-prev
+  top 100%
+  left 0
+  text-align left
+  &:before
+    color $gray
+    content "<"
+
+.slick-next
+  top 100%
+  left 26px
+  right unset
+  text-align left
+  &:before
+    color $gray
+    content ">"
+.slick-dots
+  bottom -30px
+.slick-slide:nth-child(odd)
+  background $c2
+
+.pagingInfo
+  position absolute
+  width 100%
+  bottom 3%

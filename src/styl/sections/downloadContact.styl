@@ -1,0 +1,94 @@
+.download-contact
+  flexbox(flex)
+  justify-content(center)
+  align-items(center)
+  padding 5%
+  box-sizing border-box
+  @media only screen and (min-width:$screen-xs)
+    justify-content(space-around)
+
+  .content
+    flexbox(flex)
+    justify-content(space-between)
+    flex-wrap(wrap)
+    width 100%
+    max-width 1148px
+    .download
+      width 100%
+      min-width 320px
+      flexbox(flex)
+      flex-direction(column)
+      align-items(center)
+      box-sizing border-box
+      padding-top 60px
+      .logo
+        margin-top 40px
+        width 208px
+        height 134px
+        img
+          width 100%
+          height auto
+      @media only screen and (min-width:$screen-md)
+        width 49%
+
+      .buttons-actions
+        flexbox(flex)
+        justify-content(center)
+        flex-direction(column)
+        align-items(center)
+        width 100%
+        a
+          margin-bottom 20px
+          i
+            margin-right 4px
+        @media only screen and (min-width:$screen-xs)
+          flex-direction(row)
+          justify-content(space-around)
+          width 400px
+
+
+    .contact
+      width 100%
+      flexbox(flex)
+      justify-content(center)
+      align-items(center)
+      flex-direction(column)
+      .frmContact
+        width 100%
+        .group
+          width 100%
+          margin-bottom 30px
+          flexbox(flex)
+          justify-content(center)
+          align-items(center)
+        .form-input
+          min-width 300px
+          width 100%
+          max-width 461px
+          height 40px
+          border-radius 5px
+          background-color $white
+          border solid 2px $gray-3
+          padding 10px
+          box-sizing border-box
+          outline 0
+        .form-textarea
+          min-width 300px
+          width 100%
+          max-width 461px
+          height 169px
+          border-radius 5px
+          background-color $white
+          border solid 2px $gray-3
+          padding 10px
+          box-sizing border-box
+          outline 0
+      @media only screen and (min-width:$screen-md)
+        width 49%
+        align-items(flex-end)
+        .frmContact
+          width 100%
+          .group
+            flexbox(flex)
+            justify-content(end)
+            align-items(center)

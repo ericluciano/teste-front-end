@@ -1,0 +1,45 @@
+/* sections */
+.functionalities
+  @media screen and (max-width:$screen-sm)
+    min-width 320px
+
+
+  flexbox(flex)
+  flex-direction(column)
+  align-items(center)
+  justify-content(center)
+  padding 8% 5% 10% 5%
+  .content
+    flexbox(flex)
+    align-items(center)
+    justify-content(space-around)
+    flex-wrap(wrap)
+    width 320px
+    max-width 1148px
+    margin-top 8%
+    @media only screen and (min-width:$screen-xs)
+      justify-content(space-around)
+      width 80%
+    @media only screen and (min-width:$screen-md)
+      justify-content(space-evenly)
+      width 70%
+    @media only screen and (min-width:$screen-lg)
+      justify-content(space-between)
+      width 100%
+    .box
+      flexbox(flex)
+      flex-direction(column)
+      align-items(center)
+      justify-content(center)
+      width 264px
+      height 210px
+      border-radius 5px
+      background-color $white
+      box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.1)
+      margin-bottom 30px
+      box-sizing border-box
+      text-align center
+      padding 30px
+      transition all .2s ease-in-out
+      &:hover
+        transform scale(1.1)

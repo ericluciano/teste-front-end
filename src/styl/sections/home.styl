@@ -1,0 +1,32 @@
+.home
+  flexbox(flex)
+  align-items(center)
+  justify-content(center)
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  background-image url('/assets/img/header.jpg')
+  height 100%
+  background-color $green
+  .content
+    flexbox(flex)
+    flex-direction(column)
+    justify-content(center)
+    align-items(center)
+  .go-about
+    flexbox(flex)
+    justify-content(center)
+    align-items(center)
+    width 22px
+    height 22px
+    position absolute
+    bottom 0
+    margin-bottom 21px
+    border-radius 50%
+    color $gray
+    border 2px solid $gray
+    i
+      font-size convertpxtorem(14)
+    &:hover
+      -webkit-animation jello-horizontal 0.9s both
+      animation jello-horizontal 0.9s both

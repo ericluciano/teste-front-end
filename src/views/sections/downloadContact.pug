@@ -1,0 +1,33 @@
+-var apple = 'font-dosis fs-14 fw-600 line-letter-3 btn-animated btn btn-large bg-green color-white'
+-var google = 'font-dosis fs-14 fw-600 line-letter-3 btn-animated btn btn-large bg-white color-green border-green'
+-var appleIcon = 'fa fa-1x fa-apple color-white'
+-var googleIcon = 'fa fa-1x fa-play color-green'
+-var talk = 'font-dosis fs-24 fw-bold line-letter-4 color-green text-upper mb-51'
+-var input = 'font-dosis fs-14 line-letter-3 color-gray form-input text-input'
+-var textarea = 'font-dosis fs-14 line-letter-3 color-gray form-textarea text-input'
+-var button = 'font-dosis fs-14 fw-600 line-letter-3 color-white btn btn-default bg-green'
+section(id='download' class='download-contact')
+  div.content
+    div.download
+      div.logo
+        img(src='assets/img/logo-conectus.svg' alt='Conectus' title='Conectus' width='207' height='134')
+      div.buttons-actions
+        a(href='https://www.apple.com/br/ios/app-store/' class=apple)
+          i(class=appleIcon)
+          | Download the app
+        a(href='https://play.google.com/store?hl=pt' class=google)
+          i(class=googleIcon)
+          | Download the app
+    div.contact
+      p(class=talk) Quer falar com a gente?
+      form(role='form' class='frmContact' id='frmContact')
+        div.group
+          input(type='text' class=input id='name' name='name' placeholder='nome' required)
+        div.group
+          input(type='text' class=input id='email' name='email' placeholder='e-mail' required)
+        div.group
+          input(type='text' class=input id='phone' name='phone' placeholder='phone' required)
+        div.group
+          textarea(cols='30' rows='10' class=textarea id='message' name='message' placeholder='mensagem' required)
+        div.group
+          button(type='submit' class=button) Enviar

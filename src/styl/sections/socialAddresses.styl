@@ -1,0 +1,47 @@
+.social-and-addresses
+  .content
+    padding 5.4% 5%
+    box-sizing border-box
+    max-width 1148px
+    margin 0 auto
+    flexbox(flex)
+    flex-direction(column)
+    @media only screen and (min-width:$screen-sm)
+      padding 5%
+      flex-direction(row)
+    @media only screen and (min-width:$screen-lg)
+      padding 5% 0
+    .social
+      width 100%
+      box-sizing border-box
+      margin-bottom 30px
+      text-align center
+      @media only screen and (min-width:$screen-xs)
+        margin-bottom 0
+        text-align left
+      .icons
+        flexbox(flex)
+        flex-wrap(wrap)
+        justify-content(space-between)
+        @media only screen and (min-width:$screen-sm)
+          max-width 320px
+          justify-content(space-between)
+      .circle
+        flexbox(flex)
+        justify-content(center)
+        align-items(center)
+        width 42px
+        height 42px
+        background-color $gray
+        border-radius 50%
+        text-decoration none
+    .address
+      box-sizing border-box
+      width 100%
+      text-align center
+      @media only screen and (min-width:$screen-sm)
+        text-align right
+
+.copyright
+  box-sizing border-box
+  padding 1% 2%
